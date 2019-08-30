@@ -1,0 +1,11 @@
+/* pages/appointmentResult/appointmentResult.wxss */
+.navigation-wrapper {
+  position: relative;
+  border: 1px solid red;
+}
+
+.navigation-bg-img{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}

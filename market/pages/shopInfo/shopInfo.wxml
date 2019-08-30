@@ -1,0 +1,31 @@
+<!--pages/shopInfo/shopInfo.wxml-->
+<view class='navigation-wrapper'>
+<view>a</view>
+<image class='navigation-bg-img' src="../../img/bg1.png"></image>
+</view>
+
+<view class="container">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        日期: {{date}}
+      </view>
+    </picker>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="section__title">收货地址</view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </view>
+  <button bindtap='toAppointmentResult'>下一步</button>
+
+</view>
