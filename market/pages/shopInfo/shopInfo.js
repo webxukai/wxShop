@@ -136,6 +136,31 @@ Page({
     })
   },
   toAppointmentResult: function () {
+    let that = this
+    if (!(/^1[3456789]\d{9}$/.test(this.data.mobile)) ) {
+      wx.showToast({
+        title: '手机号有误',
+        icon: 'none',
+        duration: 2000
+      })
+      return
+    }
+    if (this.data.address == '') {
+      wx.showToast({
+        title: '收货地址有误',
+        icon: 'none',
+        duration: 2000
+      })
+      return
+    }
+    if (this.data.name == '') {
+      wx.showToast({
+        title: '联系人有误',
+        icon: 'none',
+        duration: 2000
+      })
+      return
+    }
     wx.request({
       url: 'https://dzx.api.izhuo.tech/user/booking',
       data: {
@@ -152,15 +177,19 @@ Page({
         console.log(res.data)
         if (res.data.code == 1026) {
           wx.navigateTo({
-            url: '../appointmentResult/appointmentResult'
+            url: '../appointmentResult/appointmentResult?name=' + that.data.name + '&address=' + that.data.address + "&mobile=" + that.data.mobile
           })
         } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 2000
+          })
           console.log(res.data)
         }
         // wx.navigateTo({
-        //   url: '../appointmentResult/appointmentResult'
+        //   url: '../appointmentResult/appointmentResult?name=' + that.data.name + '&address=' + that.data.address + "&mobile=" + that.data.mobile
         // })
-
       }
     })
 
@@ -169,7 +198,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.data.code = options.code;
+    this.setData({
+      code: options.code
+    })
+
   },
 
   /**

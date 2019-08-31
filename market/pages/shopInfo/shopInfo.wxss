@@ -58,7 +58,6 @@
   color: #666;
   letter-spacing: 0;
 }
-
 .info-user-input {
   box-sizing: border-box;
   position: absolute;
@@ -70,8 +69,8 @@
 
 .icon-right-abslute {
   position: absolute;
-  top: 0;
-  right: 0rpx;
+  top: 25rpx;
+  right: 28rpx;
 }
 
 .info-button {
@@ -86,4 +85,9 @@ font-size: 36rpx;
 color: #FFFFFF;
 text-align: center;
 line-height: 77.3rpx;
+}
+.right-img {
+  width: 26rpx;
+  height: 30rpx;
+  /* border: 1px solid greenyellow; */
 }

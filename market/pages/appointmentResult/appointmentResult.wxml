@@ -9,19 +9,19 @@
     <view  class='success-info-wrapper'>
       <view class='text-align-left'>
         <text>收货人 : </text>
-        <text>李楠</text>
+        <text>{{ name}}</text>
       </view>
       <view class='text-align-left'>
         <text>地址 : </text>
-        <text>上海市闵行区万象城</text>
+        <text>{{address}}</text>
       </view>
       <view class='text-align-left'>
         <text>手机号 : </text>
-        <text>18812341234</text>
+        <text>{{mobile}}</text>
       </view>
       <view class='text-align-left'>
-        <text>顺丰快递 : </text>
-        <text>1234567890123</text>
+        <text>{{delivery_name}} : </text>
+        <text>{{delivery_no}}</text>
       </view>
     </view>
     <view >

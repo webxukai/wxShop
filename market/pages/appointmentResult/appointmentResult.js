@@ -6,6 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name: '',
+    mobile:'',
+    address:'',
+    delivery_name:'no',
+    delivery_no:'no',
     height: app.globalData.height * 2 + 20, 
     navbarData:{
       title: '预约完成',
@@ -26,6 +31,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
+    this.setData({
+      name: options.name,
+      address: options.address,
+      mobile: options.mobile
+    })
 
   },
 

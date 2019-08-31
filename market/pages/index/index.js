@@ -34,7 +34,11 @@ Page({
   },
   toShopInfo: function () {
     if (this.data.code == '') {
-
+      wx.showToast({
+        title: '兑换码不能为空',
+        icon:'none',
+        duration: 2000
+      })
     } else {
       wx.navigateTo({
         url: '../shopInfo/shopInfo?code=' + this.data.code

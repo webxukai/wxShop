@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/shopInfo/shopInfo",
-  
     "pages/index/index",
+    "pages/shopInfo/shopInfo",
     "pages/appointmentResult/appointmentResult",
     "pages/logs/logs"
   ],
@@ -12,5 +11,6 @@
     "navigationBarBackgroundColor": "#444",
     "navigationBarTitleText": "大闸蟹兑换",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
