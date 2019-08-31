@@ -1,5 +1,1 @@
 /**index.wxss**/
-.navigation-bg-img{
-  width: 100%;
-  height: 100px;
-}

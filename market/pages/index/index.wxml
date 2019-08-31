@@ -1,10 +1,9 @@
 <!--index.wxml-->
-<image class='navigation-bg-img' src="../../img/bg1.png"></image>
+<nav-bar-top></nav-bar-top>
 <view class="container">
   <view class="section">
     <input placeholder-style="color:#999" placeholder="请输入账号" auto-focus/>
   </view>
-
   <view class="section">
     <input placeholder-style="color:#999" password type="text" placeholder="请输入手机密码" />
   </view>

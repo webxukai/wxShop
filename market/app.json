@@ -8,8 +8,9 @@
   "window": {
     "navigationStyle": "custom",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#444",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "大闸蟹兑换",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

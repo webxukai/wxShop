@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-
+    "nav-bar-top":"../index-nav-top/index-nav-top"
   }
 }
