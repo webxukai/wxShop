@@ -1,8 +1,6 @@
 <!--index.wxml-->
-<view class='index-title-wrapper'>
-  <text class='index-back' bindtap="back">〈 返回</text>
-  <text class='index-title'>大闸蟹兑换</text>
-  <image class='index-img height-411' src="../../img/bg2.png"></image>
+<view class="nav-header">
+<nav-top navbarData='{{navbarData}}'></nav-top>
 </view>
 
 <view class="container">

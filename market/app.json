@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/shopInfo/shopInfo",
-    "pages/appointmentResult/appointmentResult"
+  
+    "pages/index/index",
+    "pages/appointmentResult/appointmentResult",
+    "pages/logs/logs"
   ],
   "window": {
     "navigationStyle": "custom",

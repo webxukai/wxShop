@@ -1,8 +1,6 @@
 <!--pages/appointmentResult/appointmentResult.wxml-->
 <view class='index-title-wrapper'>
-  <text class='index-back' bindtap='back'>〈 返回</text>
-  <text class='index-title'>预约完成</text>
-  <image class='index-img' src="../../img/bg1.png"></image>
+  <nav-top navbarData='{{navbarData}}'></nav-top>
 </view>
 
 <view class="container">

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "nav-top": "../nav-top/nav-top",
     "mp-msg": "../components/msg/msg"
   }
 }

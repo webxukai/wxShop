@@ -14,7 +14,11 @@ Page({
     index: 0,
     multiIndex: [0, 0, 0],
     time: '12:01',
-    customItem: '全部'
+    customItem: '全部',
+    navbarData: {
+      title: "预约",
+      bg: '1'
+    },
   },
   back: function () {
     wx.navigateBack({

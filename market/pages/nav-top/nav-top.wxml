@@ -1,0 +1,18 @@
+<!--pages/nav-top/nav-top.wxml-->
+<view>
+  <view class='nav-wrap' style='height: {{height*2 + 20}}px;'>
+    <!-- // 导航栏 中间的标题 -->
+    <view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navbarData.title}}</view>
+    <view style='display: flex; justify-content: space-around;flex-direction: column'>
+      <view class='nav-capsule' style='height: {{height*2 + 44}}px;'>
+        <view bindtap='_navback'>
+          <image class="back-img" src="../../img/back.png"></image>
+        </view>
+        <view bindtap='_navback' class="back-text">返回</view>
+      </view>
+    </view>
+  </view>
+  <!-- 对应两种导航背景 -->
+  <image class='navigation-bg2-img' wx-if='{{navbarData.bg==2}}' src='../../img/bg2.png'></image>
+  <image class='navigation-bg1-img' style='height: {{height*2 + 20}}px;' wx-if='{{navbarData.bg==1}}' src='../../img/bg1.png'></image>
+</view>

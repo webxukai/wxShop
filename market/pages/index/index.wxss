@@ -3,11 +3,9 @@
 /* .container {
   border: 1px solid rebeccapurple;
 } */
-
-.height-411 {
+.nav-header{
   height: 411rpx;
 }
-
 .exchange-view {
   position: absolute;
   top: 560rpx;

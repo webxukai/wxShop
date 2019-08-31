@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     code :'',
@@ -10,7 +9,17 @@ Page({
     background: '#fff',
     show: true,
     animated: false,
-    statusBarHeight: app.globalData.statusBarHeight
+    navbarData: {
+      title:"大闸蟹兑换",
+      bg: '2'
+    },
+    height: app.globalData.height * 2 + 20, 
+  },
+  attached: function () {
+    // 定义导航栏的高度   方便对齐
+    this.setData({
+      height: app.globalData.height
+    })
   },
   //事件处理函数
   bindViewTap: function() {
