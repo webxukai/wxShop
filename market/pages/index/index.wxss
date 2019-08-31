@@ -1,5 +1,54 @@
 /**index.wxss**/
-.navigation-bg-img{
+
+/* .container {
+  border: 1px solid rebeccapurple;
+} */
+
+.height-411 {
+  height: 411rpx;
+}
+
+.exchange-view {
+  position: absolute;
+  top: 560rpx;
+  width: 541rpx;
+  height: 78rpx;
+}
+
+.exchange-input {
+  box-sizing: border-box;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  padding-left: 70rpx;
+  border-radius: 47rpx;
+  font-size: 28rpx;
+  border: 2px solid #ffbea1;
+  opacity: 0.4;
+}
+
+.exchange-icon {
+  position: absolute;
+  top: 28rpx;
+  left: 29rpx;
+  width: 31rpx;
+  height: 23rpx;
+}
+
+.exchange-view-btn {
+  position: absolute;
+  top: 720.8rpx;
+  width: 541rpx;
+  height: 78rpx;
+}
+
+.exchange-btn {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: #ffb4a1;
+  border-radius: 47rpx;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 78rpx;
+  color: #fff;
 }

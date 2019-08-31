@@ -9,3 +9,33 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.index-title-wrapper {
+  position: relative;
+  width: 750rpx;
+  height: 126rpx;
+  font-size: 34rpx;
+}
+
+.index-title {
+  position: absolute;
+  left: 225rpx;
+  color: #fff;
+  width: 300rpx;
+  height: 126rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 126rpx;
+}
+
+.index-img {
+  width: 100%;
+  height: 126rpx;
+}
+
+.index-back {
+  position: absolute;
+  color: #fff;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}

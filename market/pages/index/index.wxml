@@ -1,14 +1,17 @@
 <!--index.wxml-->
-<image class='navigation-bg-img' src="../../img/bg1.png"></image>
+<view class='index-title-wrapper'>
+  <text class='index-back' bindtap="back">〈 返回</text>
+  <text class='index-title'>大闸蟹兑换</text>
+  <image class='index-img height-411' src="../../img/bg2.png"></image>
+</view>
+
 <view class="container">
-  <view class="section">
-    <input placeholder-style="color:#999" placeholder="请输入账号" auto-focus/>
+  <view class='exchange-view'>
+  <image class='exchange-icon' src="../../img/xingzhuang.png"></image>
+    <input class='exchange-input' placeholder-style="color:#999;" placeholder="请输入兑换码" bindinput ="bindCode" auto-focus/>
   </view>
+  <view class='exchange-view-btn'>
+  <button class='exchange-btn' bindtap="toShopInfo"> 兑换 </button>
 
-  <view class="section">
-    <input placeholder-style="color:#999" password type="text" placeholder="请输入手机密码" />
   </view>
-
-  <button> 获取验证码 </button>
-  <button bindtap="toShopInfo"> 下一步 </button>
 </view>

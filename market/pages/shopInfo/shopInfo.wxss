@@ -1,11 +1,90 @@
 /* pages/shopInfo/shopInfo.wxss */
-.navigation-wrapper {
+
+.container {
   position: relative;
-  border: 1px solid red;
+  padding-left: 30rpx;
 }
 
-.navigation-bg-img{
+.info-item-wrapper {
   position: absolute;
+  height: 82.9rpx;
   width: 100%;
-  height: 100px;
+  text-align: left;
+  line-height: 82.9rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #666;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.top-0 {
+  top: 0rpx;
+}
+
+.top-90 {
+  top: 90rpx;
+}
+
+.top-180 {
+  top: 180rpx;
+}
+
+.top-270 {
+  top: 270rpx;
+}
+
+.top-360 {
+  top: 360rpx;
+}
+
+.text-align-right {
+  float: right;
+  /* margin-right: 76rpx; */
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #cdcdcd;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+.icon-right {
+  padding: 0 26rpx;
+  font-weight: 600;
+  color: #c7c7cc;
+}
+
+.info-left-text {
+  font-family: PingFangSC-Regular;
+  font-size: 34rpx;
+  color: #666;
+  letter-spacing: 0;
+}
+
+.info-user-input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0rpx;
+  padding-right: 76rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-right-abslute {
+  position: absolute;
+  top: 0;
+  right: 0rpx;
+}
+
+.info-button {
+  position: absolute;
+  top: 527rpx;
+  width: 542rpx;
+  height: 77.3rpx;
+  background: #ffb4a1;
+  border-radius: 40rpx;
+  font-family: PingFangSC-Regular;
+font-size: 36rpx;
+color: #FFFFFF;
+text-align: center;
+line-height: 77.3rpx;
 }

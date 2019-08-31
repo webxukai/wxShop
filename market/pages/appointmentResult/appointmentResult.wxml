@@ -1,41 +1,32 @@
 <!--pages/appointmentResult/appointmentResult.wxml-->
-<view class='navigation-wrapper'>
-  <view>a</view>
-  <image class='navigation-bg-img' src="../../img/bg1.png"></image>
+<view class='index-title-wrapper'>
+  <text class='index-back' bindtap='back'>〈 返回</text>
+  <text class='index-title'>预约完成</text>
+  <image class='index-img' src="../../img/bg1.png"></image>
 </view>
 
 <view class="container">
-  <view>
-    <image src="../../img/bg1.png"></image>
-    <text>
-    恭喜你兑换成功
-  </text>
-  </view>
-  <view>
-    <view>
-      <text>联系人 : </text>
-      <text>张三</text>
+<image class='fill-img' src='../../img/Fill .png'></image>
+  <view class='fill-title'>恭喜你兑换成功!</view>
+    <view  class='success-info-wrapper'>
+      <view class='text-align-left'>
+        <text>收货人 : </text>
+        <text>李楠</text>
+      </view>
+      <view class='text-align-left'>
+        <text>地址 : </text>
+        <text>上海市闵行区万象城</text>
+      </view>
+      <view class='text-align-left'>
+        <text>手机号 : </text>
+        <text>18812341234</text>
+      </view>
+      <view class='text-align-left'>
+        <text>顺丰快递 : </text>
+        <text>1234567890123</text>
+      </view>
     </view>
-    <view>
-      <text>地址 : </text>
-      <text>上海市,黄浦区,南京东路,234号</text>
+    <view >
+      <button class='fill-btn' bindtap='backToIndex' >完成</button>
     </view>
-    <view>
-      <text>手机号 : </text>
-      <text>188 1234 1234</text>
-    </view>
-
-    <view>
-      <text>订单信息 : </text>
-      <text>888777666555</text>
-    </view>
-
-
-
-  </view>
-  <view>
-   <button>
-      完成
-   </button>
-  </view>
 </view>

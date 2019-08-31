@@ -4,11 +4,13 @@ const app = getApp()
 
 Page({
   data: {
+    code :'',
     loading: false,
     color: '#000',
     background: '#fff',
     show: true,
-    animated: false
+    animated: false,
+    statusBarHeight: app.globalData.statusBarHeight
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,9 +18,24 @@ Page({
       url: '../logs/logs'
     })
   },
+  back: function () {
+    wx.navigateBack({
+      delta: 1
+    })
+  },
   toShopInfo: function () {
-    wx.navigateTo({
-      url: '../shopInfo/shopInfo'
+    if (this.data.code == '') {
+
+    } else {
+      wx.navigateTo({
+        url: '../shopInfo/shopInfo?code=' + this.data.code
+      })
+    }
+
+  },
+  bindCode(e) {
+    this.setData({
+      code: e.detail.value
     })
   },
   onLoad: function () {
