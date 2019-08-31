@@ -1,4 +1,5 @@
 // pages/shopInfo/shopInfo.js
+const app = getApp()
 Page({
 
   /**
@@ -15,6 +16,7 @@ Page({
     multiIndex: [0, 0, 0],
     time: '12:01',
     customItem: '全部',
+    height: app.globalData.height,
     navbarData: {
       title: "预约",
       bg: '1'

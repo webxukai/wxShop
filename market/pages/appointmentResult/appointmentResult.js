@@ -1,10 +1,12 @@
 // pages/appointmentResult/appointmentResult.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    height: app.globalData.height * 2 + 20, 
     navbarData:{
       title: '预约完成',
       bg: '1'

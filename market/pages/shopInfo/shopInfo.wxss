@@ -1,7 +1,4 @@
 /* pages/shopInfo/shopInfo.wxss */
-.nav-header{
-  height:110rpx;
-}
 .container {
   position: relative;
   padding-left: 30rpx;

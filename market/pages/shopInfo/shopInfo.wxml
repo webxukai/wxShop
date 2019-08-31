@@ -1,5 +1,5 @@
 <!--pages/shopInfo/shopInfo.wxml-->
-<view class="nav-header">
+<view class="nav-header" style="height:{{height*2 + 20}}px;">
   <nav-top navbarData='{{navbarData}}'></nav-top>
 </view>
 <view class="container">

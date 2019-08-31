@@ -1,5 +1,5 @@
 <!--pages/appointmentResult/appointmentResult.wxml-->
-<view class='index-title-wrapper'>
+<view class='index-title-wrapper' style="{{height}}">
   <nav-top navbarData='{{navbarData}}'></nav-top>
 </view>
 

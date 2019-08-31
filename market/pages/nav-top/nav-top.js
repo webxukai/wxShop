@@ -17,7 +17,6 @@ Component({
     height: '',
   },
   attached: function() {
-    console.log(this.navbarData)
     // 定义导航栏的高度   方便对齐
     this.setData({
       height: app.globalData.height

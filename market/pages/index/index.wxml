@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="nav-header">
+<view class="nav-header" style="{{height}}">
 <nav-top navbarData='{{navbarData}}'></nav-top>
 </view>
 
