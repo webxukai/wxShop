@@ -151,9 +151,9 @@ Page({
         } else {
           console.log(res.data)
         }
-        wx.navigateTo({
-          url: '../appointmentResult/appointmentResult'
-        })
+        // wx.navigateTo({
+        //   url: '../appointmentResult/appointmentResult'
+        // })
 
       }
     })
